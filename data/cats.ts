@@ -12,7 +12,7 @@ export const cats: Cat[] = [
     colour: "Blue-grey",
     description:
       "Bramble is a wonderfully chunky British Shorthair with a plush blue-grey coat and enormous golden eyes. He loves lap naps and watching birds from the windowsill. Raised in a busy family home in Oxford, he is fully socialised with children and other pets.",
-    imageUrl: "https://images.unsplash.com/photo-1518791841217-8f162f1912da?w=600&h=400&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=600&h=400&fit=crop",
     available: true,
   },
   {
@@ -40,7 +40,7 @@ export const cats: Cat[] = [
     colour: "Brown tabby",
     description:
       "Hawthorn is a magnificent young Maine Coon with tufted ears and a glorious bushy tail. He is already enormous for his age and shows all the playful, dog-like Maine Coon personality. He fetches crumpled paper and comes when called.",
-    imageUrl: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600&h=400&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?w=600&h=400&fit=crop",
     available: true,
   },
   {
@@ -54,7 +54,7 @@ export const cats: Cat[] = [
     colour: "Cream",
     description:
       "Petal is a dreamy cream Persian with a flat, sweet face and a coat that demands (and receives) daily grooming. She is calm, quiet, and utterly devoted to her humans. Perfect for a peaceful home where she can reign supreme.",
-    imageUrl: "https://images.unsplash.com/photo-1542736667-069246bdbc6d?w=600&h=400&fit=crop",
+    imageUrl: "https://images.unsplash.com/photo-1561948955-570b270e7c36?w=600&h=400&fit=crop",
     available: true,
   },
   {

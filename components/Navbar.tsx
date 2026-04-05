@@ -2,34 +2,37 @@
 
 import Link from "next/link";
 import { useBasketStore } from "@/store/basketStore";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Navbar() {
   const items = useBasketStore((s) => s.items);
 
   return (
-    <nav className="sticky top-0 z-50 bg-rose-50 border-b border-rose-200 shadow-sm">
+    <nav className="sticky top-0 z-50 bg-rose-50 dark:bg-zinc-900 border-b border-rose-200 dark:border-zinc-700 shadow-sm transition-colors">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
           <span className="text-2xl">🐾</span>
-          <span className="text-xl font-bold text-rose-700 group-hover:text-rose-900 transition-colors">
+          <span className="text-xl font-bold text-rose-700 dark:text-rose-400 group-hover:text-rose-900 dark:group-hover:text-rose-300 transition-colors">
             Mochi Cats
           </span>
-          <span className="hidden sm:inline text-sm text-rose-400 font-medium">
+          <span className="hidden sm:inline text-sm text-rose-400 dark:text-rose-500 font-medium">
             Oxfordshire
           </span>
         </Link>
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-3">
           <Link
             href="/"
-            className="text-rose-600 hover:text-rose-900 font-medium transition-colors"
+            className="text-rose-600 dark:text-rose-400 hover:text-rose-900 dark:hover:text-rose-200 font-medium transition-colors"
           >
             Browse
           </Link>
 
+          <ThemeToggle />
+
           <Link
             href="/basket"
-            className="relative flex items-center gap-2 bg-rose-600 hover:bg-rose-700 text-white px-4 py-2 rounded-full font-medium transition-colors"
+            className="relative flex items-center gap-2 bg-rose-600 hover:bg-rose-700 dark:bg-rose-700 dark:hover:bg-rose-600 text-white px-4 py-2 rounded-full font-medium transition-colors"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
